@@ -50,8 +50,7 @@ To install LunarVim, follow these steps:
 <div align="center">
 <img src="showcase1.png" alt="Multi-spliting panes" width="80%"/><br/>
 <sup>Multi-spliting panes</sup>
-</div>
-\
+</div>\
 
 <div align="center">
 <img src="showcase2.png" alt="Telescope" width="80%"/><br/>
