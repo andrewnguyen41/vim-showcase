@@ -1,4 +1,4 @@
-# Vim Developement Configuration
+# Vim Developement Configurations
 
 This repository contains my personalized configuration files for various tools and applications including Vim, Tmux, Yabai, and Alacritty. These configurations are tailored to optimize my workflow and enhance my development environment.
 
@@ -51,7 +51,7 @@ To install LunarVim, follow these steps:
 <img src="showcase1.jpg" alt="Multi-spliting panes" width="80%"/><br/>
 <sup>Multi-spliting panes</sup>
 </div>
-
+ 
 <div align="center">
 <img src="showcase2.jpg" alt="Telescope" width="80%"/><br/>
 <sup>Telescope</sup>
