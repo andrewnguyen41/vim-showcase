@@ -1,4 +1,4 @@
-# Vim Developement Configuration
+# Vim Developement Configurations
 
 This repository contains my personalized configuration files for various tools and applications including Vim, Tmux, Yabai, and Alacritty. These configurations are tailored to optimize my workflow and enhance my development environment.
 
