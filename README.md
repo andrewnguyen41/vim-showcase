@@ -76,7 +76,3 @@ Feel free to suggest improvements or changes by creating a pull request. I'm ope
 ## Acknowledgments
 
 Special thanks to the developers and contributors of the tools and plugins used in these configurations.
-
----
-
-This updated README includes a new "Showcase" section where images of your Tmux setup, Yabai in action, Alacritty configuration, and LunarVim IDE are displayed to provide a visual representation of your configurations. Adjust the image paths (`images/tmux_setup.png`, `images/yabai_action.png`, etc.) to match the actual paths of your images.
