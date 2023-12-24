@@ -57,6 +57,11 @@ To install LunarVim, follow these steps:
 <sup>Telescope</sup>
 </div>
 
+<div align="center">
+<img src="hopword.jpg" alt="Telescope" width="80%"/><br/>
+<sup>Hopword</sup>
+</div>
+
 ## How to Use
 
 1. **Tmux**: Copy the contents of `.tmux.conf` to your `~/.tmux.conf` file.
