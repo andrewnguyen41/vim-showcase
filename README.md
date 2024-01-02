@@ -74,10 +74,9 @@ To install LunarVim, follow these steps:
 - Make sure to backup your existing configuration files before replacing them with these settings.
 - Refer to individual files for more specific information about each tool's configuration.
 
-## Contributions
-
-Feel free to suggest improvements or changes by creating a pull request. I'm open to enhancements that could further streamline or improve my development setup.
-
 ## Acknowledgments
 
 Special thanks to the developers and contributors of the tools and plugins used in these configurations.
+
+## Support and Feedback
+Feel free to delve into the code and make adjustments to suit your specific requirements. If you encounter any questions or issues, don't hesitate to reach out. Happy coding!
