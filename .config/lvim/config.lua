@@ -3,6 +3,8 @@
  `lvim` is the global options object
 ]]
 -- vim options
+-- vim.g.rnvimr_enable_ex = 1
+vim.g.rnvimr_enable_picker = 1
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
@@ -48,6 +50,7 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- lvim.builtin.dap.active = true
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
+lvim.builtin.treesitter.autotag.enable = true
 lvim.builtin.telescope.extensions["recent_files"] = {
   only_cwd = true
 }
@@ -63,6 +66,7 @@ lvim.builtin.which_key.mappings["r"] = {
 }
 lvim.builtin.which_key.mappings["x"] = { "<cmd>quit<cr>", "Quit" }
 lvim.builtin.which_key.mappings["q"] = {}
+lvim.builtin.which_key.mappings["o"] = { "<cmd>RnvimrToggle<cr>", "Ranger" }
 lvim.builtin.which_key.mappings["-"] = { "<cmd>split<cr>", "Split Horizontal" }
 lvim.builtin.which_key.mappings["\\"] = { "<cmd>vsplit<cr>", "Split Vertical" }
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -126,7 +130,7 @@ lvim.plugins = {
       vim.api.nvim_set_keymap("n", "<leader>t", ":TroubleToggle<CR>", {})
     end,
   },
-  { "LunarVim/darkplus.nvim" },
+  -- { "LunarVim/darkplus.nvim" },
   {
     "phaazon/hop.nvim",
     name = "Hop",
@@ -146,14 +150,26 @@ lvim.plugins = {
     end,
   },
   {
+    -- "karb94/neoscroll.nvim",
+    -- config = function()
+    --   require('neoscroll').setup()
+    -- end
     'declancm/cinnamon.nvim',
     config = function()
       require('cinnamon').setup({
+        -- extra_keymaps = true,
+        -- extended_keymaps = true,
       })
     end
   },
   {
     'christoomey/vim-tmux-navigator'
+  },
+  {
+    'windwp/nvim-ts-autotag'
+  },
+  {
+    'kevinhwang91/rnvimr'
   }
 }
 
