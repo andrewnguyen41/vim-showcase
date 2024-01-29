@@ -10,6 +10,10 @@ vim.opt.tabstop = 2
 vim.opt.relativenumber = true
 vim.wo.wrap = true
 vim.wo.linebreak = true
+
+-- Open lf when vim opens a directory 
+vim.g.lf_netrw = 1
+
 -- general
 lvim.transparent_window = true
 lvim.log.level = "info"
@@ -66,7 +70,8 @@ lvim.builtin.which_key.mappings["r"] = {
 }
 lvim.builtin.which_key.mappings["x"] = { "<cmd>quit<cr>", "Quit" }
 lvim.builtin.which_key.mappings["q"] = {}
-lvim.builtin.which_key.mappings["o"] = { "<cmd>RnvimrToggle<cr>", "Ranger" }
+lvim.builtin.which_key.mappings["o"] = { "<cmd>Lf<cr>", "LF" } 
+
 lvim.builtin.which_key.mappings["-"] = { "<cmd>split<cr>", "Split Horizontal" }
 lvim.builtin.which_key.mappings["\\"] = { "<cmd>vsplit<cr>", "Split Vertical" }
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -169,7 +174,13 @@ lvim.plugins = {
     'windwp/nvim-ts-autotag'
   },
   {
-    'kevinhwang91/rnvimr'
+    'lmburns/lf.nvim',
+    config = function()
+      require('lf').setup({
+      escape_quit = true,
+      border = "rounded",
+      })
+    end 
   }
 }
 

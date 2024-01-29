@@ -104,7 +104,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 eval "$(starship init zsh)"
 export EDITOR='lvim'
 export VISUAL='lvim'
-alias r='ranger'
+alias f='lf'
 
 # . "$HOME/.asdf/asdf.sh"
 # . "$HOME/.asdf/completions/asdf.bash"
@@ -112,3 +112,6 @@ alias r='ranger'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --type d --exclude node_modules/'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# open lf
+bindkey -s '^f' 'lf\n' 
