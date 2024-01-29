@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,4 +103,12 @@ export PATH=/opt/homebrew/bin:~/.local/bin:/Applications/Visual\ Studio\ Code.ap
 export XDG_CONFIG_HOME="$HOME/.config"
 eval "$(starship init zsh)"
 export EDITOR='lvim'
+export VISUAL='lvim'
 alias r='ranger'
+
+# . "$HOME/.asdf/asdf.sh"
+# . "$HOME/.asdf/completions/asdf.bash"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f --type d --exclude node_modules/'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
