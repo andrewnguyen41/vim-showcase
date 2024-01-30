@@ -109,9 +109,15 @@ alias f='lf'
 # . "$HOME/.asdf/asdf.sh"
 # . "$HOME/.asdf/completions/asdf.bash"
 
+# config fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --type d --exclude node_modules/'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# fzf | lvim
+bindkey -s '^f' 'lvim $( fd . '/Users/nguyennhan/Documents'  --type f --type d --exclude node_modules/  | fzf)\n'
+
 # open lf
-bindkey -s '^f' 'lf\n' 
+bindkey -s '^o' 'lf\n'
+
+
