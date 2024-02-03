@@ -11,7 +11,7 @@ vim.opt.relativenumber = true
 vim.wo.wrap = true
 vim.wo.linebreak = true
 
--- Open lf when vim opens a directory 
+-- Open lf when vim opens a directory
 vim.g.lf_netrw = 1
 
 -- general
@@ -35,6 +35,11 @@ lvim.keys.insert_mode["jk"] = "<ESC>"
 lvim.keys.insert_mode["<C-q>"] = "<ESC>"
 lvim.keys.insert_mode["<C-h>"] = "<left>"
 lvim.keys.insert_mode["<C-l>"] = "<right>"
+lvim.keys.normal_mode["<C-x>"] = "<right>"
+
+-- paste without yank in visual mode
+lvim.keys.visual_mode["p"] = "P"
+
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
@@ -70,7 +75,7 @@ lvim.builtin.which_key.mappings["r"] = {
 }
 lvim.builtin.which_key.mappings["x"] = { "<cmd>quit<cr>", "Quit" }
 lvim.builtin.which_key.mappings["q"] = {}
-lvim.builtin.which_key.mappings["o"] = { "<cmd>Lf<cr>", "LF" } 
+lvim.builtin.which_key.mappings["o"] = { "<cmd>Lf<cr>", "LF" }
 
 lvim.builtin.which_key.mappings["-"] = { "<cmd>split<cr>", "Split Horizontal" }
 lvim.builtin.which_key.mappings["\\"] = { "<cmd>vsplit<cr>", "Split Vertical" }
@@ -177,10 +182,10 @@ lvim.plugins = {
     'lmburns/lf.nvim',
     config = function()
       require('lf').setup({
-      escape_quit = true,
-      border = "rounded",
+        escape_quit = true,
+        border = "rounded",
       })
-    end 
+    end
   }
 }
 
